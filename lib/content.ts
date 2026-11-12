@@ -69,7 +69,6 @@ export const experience: Role[] = [
     dates: "May 2026 – Aug 2026",
     points: [
       "Owned daily review reporting in Relativity for an Am Law 100 firm's active litigation: reviewer throughput, privilege breakdowns, and priority documents.",
-      "Ran a bulk field correction across ~3.3M records on a live client matter, restoring searchability to previously unqueryable documents.",
       "Pitched AI workflow improvements to senior leadership, evaluating FTI GPT and IQ.AI for document analysis and retrieval.",
       "In simulated client engagements, owned the IT workstream of a 22-process post-merger governance assessment and built a forensic IP-theft timeline from a 237 GB disk image; presented to 200+ consultants.",
     ],
