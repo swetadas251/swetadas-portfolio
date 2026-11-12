@@ -3,14 +3,16 @@
 
 export const profile = {
   name: "Sweta Das",
-  tagline:
-    "I build AI tools people can trust: production LLM APIs at a legal-tech startup, data and forensics work at FTI Consulting, and LLM evaluation research at HCI International 2026.",
-  openTo: "Software engineering, AI/ML, technology consulting, and data roles for 2027.",
+  tagline: "I build AI tools people can trust.",
+  intro: "CS + HCI at Virginia Tech, M.Eng. Dec 2027.",
+  openTo: "Summer 2027 internships and co-ops in SWE, AI/ML, consulting, and data.",
   links: {
     linkedin: "https://www.linkedin.com/in/sweta-das-aaa201314",
     github: "https://github.com/swetadas251",
   },
 };
+
+export const headshot = "/headshot.jpg"; // file in /public
 
 export const education = {
   summary:
@@ -43,12 +45,14 @@ export type Role = {
   title: string;
   location: string;
   dates: string;
+  logo?: string; // file in /public/logos, e.g. "/logos/fti.png"
   points: string[];
 };
 
 export const experience: Role[] = [
   {
     org: "Virginia Tech, CS 3114",
+    logo: "/logos/vt.png",
     title: "Undergraduate Teaching Assistant",
     location: "Blacksburg, VA",
     dates: "Aug 2026 – Present",
@@ -59,6 +63,7 @@ export const experience: Role[] = [
   },
   {
     org: "FTI Consulting",
+    logo: "/logos/fti.png",
     title: "Technology Consulting Intern",
     location: "Washington, D.C.",
     dates: "May 2026 – Aug 2026",
@@ -71,6 +76,7 @@ export const experience: Role[] = [
   },
   {
     org: "Legal Chain",
+    logo: "/logos/legalchain.png",
     title: "AI Intern",
     location: "Newport Beach, CA (Remote)",
     dates: "Jul 2025 – May 2026",
@@ -82,6 +88,7 @@ export const experience: Role[] = [
   },
   {
     org: "theCoderSchool",
+    logo: "/logos/thecoderschool.png",
     title: "Code Coach",
     location: "McLean, VA",
     dates: "Jul 2024 – Aug 2025",
@@ -92,6 +99,7 @@ export const experience: Role[] = [
 export const research: Role[] = [
   {
     org: "Virginia Tech",
+    logo: "/logos/vt.png",
     title: "Research Assistant, LLM Evaluation & Human-Centered AI",
     location: "Blacksburg, VA",
     dates: "May 2025 – May 2026",
@@ -103,6 +111,7 @@ export const research: Role[] = [
   },
   {
     org: "OpenDSA",
+    logo: "/logos/vt.png",
     title: "Educational Infrastructure Researcher",
     location: "Blacksburg, VA",
     dates: "May 2025 – Aug 2025",
@@ -116,18 +125,21 @@ export const projects = [
     blurb: "AI study tool that turns any topic into explanations, notes, flashcards, and quizzes, with JWT auth, guest mode, and an analytics dashboard.",
     stack: ["Next.js", "Express", "PostgreSQL", "OpenAI"],
     github: "https://github.com/swetadas251/studyspark12",
+    live: "https://studyspark12.vercel.app",
   },
   {
     name: "CodeSync",
     blurb: "Real-time collaborative code editor with live cursors, chat, and sandboxed JS/Python execution.",
     stack: ["Next.js", "TypeScript", "Socket.io", "Monaco"],
     github: "https://github.com/swetadas251/codesync",
+    live: "https://codesync-eight-pink.vercel.app",
   },
   {
     name: "TUNL",
     blurb: "CLI that exposes localhost to the internet over secure WebSocket tunnels with HTTPS URLs. Built from scratch in Go.",
     stack: ["Go", "WebSocket", "TLS"],
     github: "https://github.com/swetadas251/tunl",
+    live: "",
   },
 ];
 
@@ -140,11 +152,11 @@ export const honors = [
 ];
 
 export const involvement = [
-  { org: "Student Engineers' Council", role: "Professional Development Committee" },
-  { org: "VTHacks", role: "UI/UX Committee" },
-  { org: "Society of Indian Americans", role: "Membership Chair Advisor" },
-  { org: "Alpha Omega Epsilon", role: "Member" },
-  { org: "Society of Women Engineers", role: "Member" },
+  { org: "Student Engineers' Council", role: "Professional Development Committee", logo: "/logos/sec.png" },
+  { org: "VTHacks", role: "UI/UX Committee", logo: "/logos/vthacks.png" },
+  { org: "Society of Indian Americans", role: "Membership Chair Advisor", logo: "/logos/sia.png" },
+  { org: "Alpha Omega Epsilon", role: "Member", logo: "/logos/aoe.png" },
+  { org: "Society of Women Engineers", role: "Member", logo: "/logos/swe.png" },
 ];
 
 // Flattens everything above into plain text for the AI assistant's system prompt.
